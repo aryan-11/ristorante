@@ -29,8 +29,8 @@
                 </div>
                 <div class="right ordini hide">
                     <div class="container_piatto_singolo">
-                        <input type="button" class="piatto piatto_1" value="<?php echo $mycsvfile[0][0];?>" name="cozze" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[0][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi" id="<?php echo $mycsvfile[0][0];?>">
+                        <input type="button" class="piatto piatto_1" value="0" name="cozze" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[0][2] ?>') no-repeat center;">
+                        <div class="infoPrezzi" id="<?php echo $mycsvfile[0][0]; ?>">
                             <p><?php echo $mycsvfile[0][0]; ?></p>
                             <p><?php echo $mycsvfile[0][1] ?> €</p>
                             <!-- <input type="text" name="name"> -->
@@ -38,35 +38,35 @@
                     </div>
                     <div class="container_piatto_singolo">
                         <input type="button" class="piatto piatto_2" value="<?php echo $mycsvfile[1][0];?>" name="piatto" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[1][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi" id="<?php echo $mycsvfile[1][0];?>">
+                        <div class="infoPrezzi" id="<?php echo $mycsvfile[1][0]; ?>">
                             <p><?php echo $mycsvfile[1][0]; ?></p>
                             <p><?php echo $mycsvfile[1][1] ?> €</p>
                         </div>
                     </div>
                     <div class="container_piatto_singolo">
                         <input type="button" class="piatto piatto_3" value="<?php echo $mycsvfile[2][0];?>" name="piatto" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[2][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi" id="<?php echo $mycsvfile[2][0];?>">
+                        <div class="infoPrezzi" id="<?php echo $mycsvfile[2][0]; ?>">
                             <p><?php echo $mycsvfile[2][0]; ?></p>
                             <p><?php echo $mycsvfile[2][1] ?> €</p>
                         </div>
                     </div>
                     <div class="container_piatto_singolo">
                         <input type="button" class="piatto piatto_4" value="<?php echo $mycsvfile[3][0];?>" name="piatto" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[3][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi" id="<?php echo $mycsvfile[3][0];?>">
+                        <div class="infoPrezzi" id="<?php echo $mycsvfile[3][0]; ?>">
                             <p><?php echo $mycsvfile[3][0]; ?></p>
                             <p><?php echo $mycsvfile[3][1] ?> €</p>
                         </div>
                     </div>
                     <div class="container_piatto_singolo">
                         <input type="button" class="piatto piatto_5" value="<?php echo $mycsvfile[4][0];?>" name="piatto" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[4][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi" id="<?php echo $mycsvfile[4][0];?>">
+                        <div class="infoPrezzi" id="<?php echo $mycsvfile[4][0]; ?>">
                             <p><?php echo $mycsvfile[4][0]; ?></p>
                             <p><?php echo $mycsvfile[4][1] ?> €</p>
                         </div>
                     </div>
                     <div class="container_piatto_singolo">
                         <input type="button" class="piatto piatto_6" value="<?php echo $mycsvfile[5][0];?>" name="piatto" style = "background: url('../../../assets/img/piatti/<?php echo $mycsvfile[5][2] ?>') no-repeat center;">
-                        <div class="infoPrezzi"  id="<?php echo $mycsvfile[5][0];?>">
+                        <div class="infoPrezzi"  id="<?php echo $mycsvfile[5][0]; ?>">
                             <p><?php echo $mycsvfile[5][0]; ?></p>
                             <p><?php echo $mycsvfile[5][1] ?> €</p>
                         </div>
@@ -125,9 +125,10 @@
                         </div>
                         <div class="bottoni">
                             <div class="totale">Totale: 0 €</div>
+                            <input type="hidden" name="totale" value="testvalue">
                             <input type="submit" value="Chiudi conto e paga" class="submit">
-                            <!-- <button><a href="./fattura.html">Chiudi conto e paga</a></button> -->
-                            <input type="reset" value="Cancella" class="reset">
+                            <!-- <input type="reset" value="Cancella" class="reset"> -->
+                            <div class="reset"><a href="ordini.php" class="reset_btn">Cancella</a></div>
                         </div>
                     </div>
                 </div>

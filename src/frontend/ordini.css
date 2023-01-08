@@ -208,6 +208,10 @@ body {
     color: #ffffff;
     cursor: pointer;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .blocco {
@@ -220,6 +224,10 @@ body {
     color: #ffffff;
 }
 
+.reset_btn {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .selected {
     border: 5px solid #FFB800;
