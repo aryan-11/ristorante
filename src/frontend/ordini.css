@@ -12,7 +12,7 @@ body {
 
 .navbar {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,8 +24,9 @@ body {
     /* background-color: #fda; */
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 
 }
 
@@ -40,7 +41,13 @@ body {
 
 .left {
     width: 45%;
-    background-color: beige;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    /* background-color: rgb(130, 130, 36); */
 }
 
 .piatto {
@@ -68,4 +75,141 @@ body {
 }
 .container_piatto_singolo:hover {
     opacity: 100%;
+}
+
+
+.container_tavoli {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.sezione_tavoli {
+    width: 100%;
+    height: 280px;
+    /* background-color: burlywood; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+
+    color: #ffffff;
+}
+
+.tavoli_numerati {
+    width: 100px;
+    height: 100px;
+    /* border: 5px solid #0EA60B; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #0EA60B;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.resoconto {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.risultati {
+    width: 85%;
+    height: 75%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.card_ordine {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-top: .2rem;
+}
+
+.dettaglio_ordine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resoconto_vuoto {
+    text-align: center;
+}
+
+.nome_tavolo {
+    /* font-size: 1.1rem; */
+}
+
+
+
+.bottoni {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.totale {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: .8rem;
+
+}
+
+.submit {
+    width: 250px;
+    height: 100%;
+    background-color: #0EA60B;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.reset {
+    width: 130px;
+    height: 100%;
+    background-color: #C90000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+
+
+.selected {
+    border: 5px solid #FFB800;
+    color: #FFB800;
+}
+.full {
+    border: 5px solid #FF0000;
+    color: #FF0000;
+}
+.hide {
+    display: none;
 }
