@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>data</title>
     <link rel="stylesheet" href="../../../frontend/style.css">
+    <link rel="stylesheet" href="../../../frontend/data.css">
 </head>
 <body>
     <section class="container_page">
-        <nav><img src="../../../../assets/logo.png" alt="logo"></nav>
+        <nav>
+            <img src="../../../../assets/logo.png" alt="logo">
+            <a href="data.php">Riazzera tutti gli ordini</a>
+            <a href="../../../../index.html">Torna alla pagina iniziale</a>
+        </nav>
         <div class="container_content">
             <div class="container_piatti">
                 <div class="box_piatto">    
@@ -21,19 +26,27 @@
                     </div>
                 </div>
             </div>
-            <div class="container_tavoli">
-                <div class="nTavolo tavolo1">1</div>
-                <div class="nTavolo tavolo2">2</div>
-                <div class="nTavolo tavolo3">3</div>
-                <div class="nTavolo tavolo4">4</div>
-                <div class="nTavolo tavolo5">5</div>
-            </div>
-            <div class="container_resoconto">
-                <div class="resoconto_tavolo resoconto_tavolo1 hide">--- TAVOLO 1 ---</div>
-                <div class="resoconto_tavolo resoconto_tavolo2 hide">--- TAVOLO 2 ---</div>
-                <div class="resoconto_tavolo resoconto_tavolo3 hide">--- TAVOLO 3 ---</div>
-                <div class="resoconto_tavolo resoconto_tavolo4 hide">--- TAVOLO 4 ---</div>
-                <div class="resoconto_tavolo resoconto_tavolo5 hide">--- TAVOLO 5 ---</div>
+            <div class="container_left">
+                <div class="container_tavoli">
+                    <p>Tavoli:</p>
+                    <div class="nTavolo tavolo1">1</div>
+                    <div class="nTavolo tavolo2">2</div>
+                    <div class="nTavolo tavolo3">3</div>
+                    <div class="nTavolo tavolo4">4</div>
+                    <div class="nTavolo tavolo5">5</div>
+                </div>
+                <div class="container_resoconto">
+                    <div class="resoconto_tavolo resoconto_tavolo1 hide">--- TAVOLO 1 ---</div>
+                    <div class="resoconto_tavolo resoconto_tavolo2 hide">--- TAVOLO 2 ---</div>
+                    <div class="resoconto_tavolo resoconto_tavolo3 hide">--- TAVOLO 3 ---</div>
+                    <div class="resoconto_tavolo resoconto_tavolo4 hide">--- TAVOLO 4 ---</div>
+                    <div class="resoconto_tavolo resoconto_tavolo5 hide">--- TAVOLO 5 ---</div>
+                    <div class="resoconto">
+                        <div class="totale_tavolo">0 €</div>
+                        <div class="chiudiPaga_btn">Chiudi il conto e paga</div>
+                        <div class="Azzera">Azzera ordini</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
