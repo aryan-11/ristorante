@@ -1,3 +1,12 @@
+@import url("./style.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 70px;
+}
+
 body {
     width: 100%;
     background-color: #509FE9;
@@ -13,9 +22,21 @@ body {
     flex-wrap: wrap;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: transparent;
+}
+
 nav {
     width: 95%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +46,10 @@ nav {
 .container_content {
     width: 95%;
     height: 70%;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* overflow: hidden; */
 }
 
 .container_piatti {
@@ -38,15 +57,51 @@ nav {
     height: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-
     flex-wrap: wrap;
-    flex-direction: column;
-    overflow-y: scroll;
+    gap: 1.5rem;
+    overflow-y: auto;
     
-    background-color: rgb(19, 48, 74);
 }
+
+a {
+    text-decoration: none;
+}
+
+.box_piatto {
+    width: 300px;
+    height: 7.5rem;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.img_mask {
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+}
+#piatto1 {
+    width: 100%;
+    /* height: 50%; */
+}
+
+.prezzo {
+    width: 20%;
+    /* background-color: #441818; */
+}
+.nome {
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+
 
 .container_left {
     width: 50%;
@@ -60,13 +115,82 @@ nav {
 }
 
 .container_tavoli {
+    width: 95%;
+    height: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    color: #ffffff;
+
+    /* background-color: rgb(14, 54, 89); */
+
+}
+
+.container_tavoli p {
     width: 100%;
-    height: 50%;
-    background-color: rgb(60, 16, 16);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nTavolo {
+    width: 4.6rem;
+    height: 4.6rem;
+
+    border: 1px black solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container_resoconto {
-    width: 100%;
+    width: 90%;
     height: 40%;
-    background-color: rgb(23, 46, 39);
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resoconto {
+    width: 100%;
+    height: 20%;
+    background-color: #31383e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    align-self: flex-end;
+}
+
+.resoconto_tavolo {
+    width: 90%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.numero_tavolo {
+    line-height: 2rem;
+}
+
+.ordine {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.hide {
+    display: none;
 }
