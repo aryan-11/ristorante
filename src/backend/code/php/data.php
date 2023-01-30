@@ -7,6 +7,7 @@
     <title>data</title>
     <link rel="stylesheet" href="../../../frontend/data.css">
     <link rel="stylesheet" href="../../../frontend/style.css">
+    <?php include "index.php"; ?>
 </head>
 <body>
     <section class="container_page">
@@ -93,7 +94,7 @@
                     <div class="resoconto_tavolo resoconto_tavolo1 ">
                         <span class="numero_tavolo">Tavolo 1</span>
                         <div class="ordine">
-                            <span class="nome_piatto">Pasta</span>
+                            <span class="nome_piatto">Pasta con cozze</span>
                             <span class="prezzo_piatto">90</span>
                         </div>
                         <!--  -->
@@ -103,7 +104,7 @@
                         </div>
                         
                         <div class="ordine">
-                            <span class="nome_piatto"><?php include "index.php"; ?></span>
+                            <span class="nome_piatto"><?php test(); ?></span>
                             <span class="prezzo_piatto">90</span>
                         </div>
                     </div>
