@@ -77,20 +77,6 @@
                             }
                             ?>
                         </div>
-
-                        <!-- <div class="ordine">
-                            <span class="nome_piatto"><?php echo $ordini[0][0];?></span>
-                            <span class="prezzo_piatto"><?php echo $ordini[0][1];?></span>
-                        </div>
-                        <div class="ordine">
-                            <span class="nome_piatto"><?php echo $ordini[1][0];?></span>
-                            <span class="prezzo_piatto"><?php echo $ordini[1][1];?></span>
-                        </div>
-                        <div class="ordine">
-                            <span class="nome_piatto"><?php echo $ordini[2][0];?></span>
-                            <span class="prezzo_piatto"><?php echo $ordini[2][1];?></span>
-                        </div> -->
-                        
                         <!--  -->
                         
                     </div>
