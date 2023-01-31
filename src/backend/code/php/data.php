@@ -22,31 +22,30 @@
     <section class="container_page">
         <nav>
             <img src="../../../../assets/logo.png" alt="logo">
-            <a href="data.php">Riazzera tutti gli ordini</a>
+            <!-- <a href="data.php">Riazzera tutti gli ordini</a> -->
             <a href="../../../../index.html">Torna alla pagina iniziale</a>
         </nav>
         <div class="container_content">
-            <div class="container_piatti">
-
-
-
-            <?php foreach ($pietanze_csv as $index => $pietanza) { ?>
-                <a href="data.php?tav=<?= $tav; ?>&nome=<?= $pietanza[0]; ?>&prezzo=<?= $pietanza[1]; ?>&flag=1">
-                    <div class="box_piatto">
-                    <div class="img_mask">
-                        <img id="piatto<?= $index + 1; ?>" src="../../../../assets/piatti/<?= $pietanza[2]; ?>" alt="pasta cozze">
-                    </div>
-                    <div class="infoPrezzi">
-                        <input type="hidden" value="<?= $index + 1; ?>">
-                        <span class="nome"><?= $pietanza[0]; ?> ~ </span>
-                        <span class="prezzo"><?= $pietanza[1]; ?> €</span>
-                    </div>
-                    </div>
-                </a>
-            <?php } ?>
-
+            <div class="note hide">
 
             </div>
+            <div class="container_piatti">
+                <?php foreach ($pietanze_csv as $index => $pietanza) { ?>
+                    <a href="data.php?tav=<?= $tav; ?>&nome=<?= $pietanza[0]; ?>&prezzo=<?= $pietanza[1]; ?>&flag=1">
+                        <div class="box_piatto">
+                        <div class="img_mask">
+                            <img id="piatto<?= $index + 1; ?>" src="../../../../assets/piatti/<?= $pietanza[2]; ?>" alt="piatto">
+                        </div>
+                        <div class="infoPrezzi">
+                            <input type="hidden" value="<?= $index + 1; ?>">
+                            <span class="nome"><?= $pietanza[0]; ?> ~ </span>
+                            <span class="prezzo"><?= $pietanza[1]; ?> €</span>
+                        </div>
+                        </div>
+                    </a>
+                <?php } ?>
+            </div>
+
             <div class="container_left">
                 <div class="container_tavoli">
                     <p>Tavoli:</p>
@@ -75,14 +74,11 @@
                             }
                             ?>
                         </div>
-                        <!--  -->
-                        
                     </div>
-
 
                     <div class="resoconto">
                         <div class="totale_tavolo"><?php echo $totalTable ?> €</div>
-                        <div class="chiudiPaga_btn">Chiudi il conto e paga</div>
+                        <a class="chiudiPaga_btn" href="tavolo<?php echo $tav ?>.csv" download ><div>Chiudi il conto e paga</div></a>
                         <a class="azzera" href="data.php?azzera=1"><div>Azzera tutti gli ordini</div>
                         <?php 
                             if($azzera == 1) {

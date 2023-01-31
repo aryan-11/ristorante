@@ -62,7 +62,6 @@ nav {
     flex-wrap: wrap;
     gap: 1.5rem;
     overflow-y: auto;
-    
 }
 
 a {
@@ -146,11 +145,11 @@ a {
     height: 4.6rem;
 
     border: 1px black solid;
+    background-color: #ffffff;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .container_resoconto {
@@ -171,7 +170,6 @@ a {
     align-items: center;
 
     align-self: flex-end;
-    font-size: .8rem;
 }
 
 .resoconto_tavolo {
@@ -198,10 +196,14 @@ a {
     text-align: center;
     color: #ffffff;
 }
+.chiudiPaga_btn div {
+    font-size: .9rem;
+}
 .totale_tavolo {
     width: 12%;
     border: 1px solid black;
     text-align: center;
+    font-size: .8rem;
 }
 .azzera {
     width: 40%;
@@ -209,7 +211,7 @@ a {
     text-align: center;
     color: #ffffff; 
 }
-
-.hide {
-    display: none;
+.azzera div {
+    font-size: .9rem;
 }
+
