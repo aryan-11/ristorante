@@ -10,7 +10,7 @@
     <?php 
           include "index.php";
           $pietanze_csv = getfood();
-          
+          $totalTable = 0;
           $tav = $_GET['tav'];
           $nome = $_GET['nome'];
           $prezzo = $_GET['prezzo'];
@@ -62,9 +62,6 @@
                         <?php
                               writeOrder($tav, $nome, $prezzo, $flag);
                               $ordini = readOrder($tav);
-
-                            //   echo $ordini[0][0];
-                            //   echo $ordini[0][1];
                         ?>
                         <span class="numero_tavolo">Tavolo <?php echo $tav; ?></span>
                         <div class="ordini">
@@ -74,6 +71,7 @@
                                 echo '<span class="nome_piatto">'.$ordine[0].'</span>';
                                 echo '<span class="prezzo_piatto">'.$ordine[1].'</span>';
                                 echo '</div>';
+                                $totalTable += $ordine[1];
                             }
                             ?>
                         </div>
@@ -83,9 +81,9 @@
 
 
                     <div class="resoconto">
-                        <div class="totale_tavolo">0 €</div>
+                        <div class="totale_tavolo"><?php echo $totalTable ?> €</div>
                         <div class="chiudiPaga_btn">Chiudi il conto e paga</div>
-                        <a href="data.php?azzera=1"><div class="Azzera">Azzera tutti gli ordini</div>
+                        <a class="azzera" href="data.php?azzera=1"><div>Azzera tutti gli ordini</div>
                         <?php 
                             if($azzera == 1) {
                                 clearTableOrders();

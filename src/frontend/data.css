@@ -166,12 +166,12 @@ a {
 .resoconto {
     width: 100%;
     height: 20%;
-    background-color: #31383e;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     align-self: flex-end;
+    font-size: .8rem;
 }
 
 .resoconto_tavolo {
@@ -192,8 +192,23 @@ a {
     align-items: center;
 }
 
-
-
+.chiudiPaga_btn {
+    background-color: #4ed92e;
+    width: 40%;
+    text-align: center;
+    color: #ffffff;
+}
+.totale_tavolo {
+    width: 12%;
+    border: 1px solid black;
+    text-align: center;
+}
+.azzera {
+    width: 40%;
+    background-color: rgb(209, 0, 0);
+    text-align: center;
+    color: #ffffff; 
+}
 
 .hide {
     display: none;
