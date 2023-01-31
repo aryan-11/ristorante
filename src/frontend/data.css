@@ -86,10 +86,14 @@ a {
     width: 100%;
     height: 5rem;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #piatto1 {
     width: 100%;
     /* height: 50%; */
+   
 }
 
 .prezzo {
